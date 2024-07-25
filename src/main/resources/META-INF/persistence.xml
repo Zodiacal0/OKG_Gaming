@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <persistence-unit name="DB_OKGShop" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>com.okg.okg_project.resources.model.Carrito</class>
+    <class>com.okg.okg_project.resources.model.Desarrolladora</class>
+    <class>com.okg.okg_project.resources.model.Descuento</class>
+    <class>com.okg.okg_project.resources.model.FacturaPaypal</class>
+    <class>com.okg.okg_project.resources.model.FacturaTarjeta</class>
+    <class>com.okg.okg_project.resources.model.Foro</class>
+    <class>com.okg.okg_project.resources.model.Juegos</class>
+    <class>com.okg.okg_project.resources.model.MetodoDePago</class>
+    <class>com.okg.okg_project.resources.model.Paypal</class>
+    <class>com.okg.okg_project.resources.model.Tarjeta</class>
+    <class>com.okg.okg_project.resources.model.TransaccionPaypal</class>
+    <class>com.okg.okg_project.resources.model.TransaccionTarjeta</class>
+    <class>com.okg.okg_project.resources.model.Usuario</class>
+    <properties>
+      <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/DB_OKGShop?serverTimezone=GMT-6"/>
+      <property name="jakarta.persistence.jdbc.user" value="OKG_Corporation"/>
+      <property name="jakarta.persistence.jdbc.password" value="admin"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+      <property name="hibernate.hbm2ddl.auto" value="create"/>
+      <!-- Cambia según tus necesidaes -->
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="jakarta.persistence.schema-generation.database.action" value="update"/>
+    </properties>
+  </persistence-unit>
+</persistence>
