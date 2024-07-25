@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/OKG_Project">
+  <Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/DB_OKGShop" password="admin" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/DB_OKGShop?serverTimezone=GMT-6" username="OKG_Corporation"/>
+</Context>
